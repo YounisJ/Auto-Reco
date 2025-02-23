@@ -20,6 +20,7 @@ url = input(colored("\nEnter Website URL Please: ", "yellow")).strip()
 output_dir = f"Auto_Recon_For_{url}"
 os.makedirs(output_dir, exist_ok=True)
 
+
 # Function to run a command and return output
 def run_command(command):
     try:
