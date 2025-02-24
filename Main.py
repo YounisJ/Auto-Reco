@@ -12,7 +12,6 @@ print(colored(banner, "cyan"))
 
 print(colored("\n\nThis tool is built for pentesters and bug hunters You \njust have to provide the URL of the website you want to\nperform reconnesance on", "blue"))
 
-
 # Get user input
 url = input(colored("\nEnter Website URL Please: ", "yellow")).strip()
 
@@ -49,6 +48,7 @@ else:
 # Step 2: Scanning Open Ports with Nmap
 print(colored("\n[+] Running Nmap to check open ports...", "blue"))
 
+
 nmap_output = run_command(["nmap", "-sV", url])
 if nmap_output:
     output_file = os.path.join(output_dir, "NmapResult.txt")
@@ -61,3 +61,5 @@ else:
     print(colored("[!] Nmap scan failed.", "red"))
 
 print(colored("\n[✓] Recon completed successfully!", "green"))
+
+# Step 3: 
