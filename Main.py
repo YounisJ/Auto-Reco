@@ -49,6 +49,7 @@ else:
 print(colored("\n[+] Running Nmap to check open ports...", "blue"))
 
 
+
 nmap_output = run_command(["nmap", "-sV", url])
 if nmap_output:
     output_file = os.path.join(output_dir, "NmapResult.txt")
