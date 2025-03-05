@@ -30,6 +30,8 @@ def run_command(command):
         print(colored(f"[!] Error running {command[0]}: {e}", "red"))
         return None
 
+
+
 # Step 1: Collecting Subdomains Using Subfinder
 print(colored("\n[+] Running Subfinder to collect subdomains...", "blue"))
 
