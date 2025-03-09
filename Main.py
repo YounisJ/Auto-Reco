@@ -35,7 +35,6 @@ def run_command(command):
 
 
 
-
 # Step 1: Collecting Subdomains Using Subfinder
 print(colored("\n[+] Running Subfinder to collect subdomains...", "blue"))
 
