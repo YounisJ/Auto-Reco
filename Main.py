@@ -48,7 +48,6 @@ else:
     print(colored("[!] No subdomains found or Subfinder failed.", "red"))
 
 
-
 # Step 2: Scanning Open Ports with Nmap
 print(colored("\n[+] Running Nmap to check open ports...", "blue"))
 
